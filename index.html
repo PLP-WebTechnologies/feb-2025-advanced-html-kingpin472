@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List and Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header>
+        <h1>Welcome to Our Contact List and Registration Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List</h2>
+        <ol type="I">
+            <li>Introduction to HTML</li>
+            <li>Understanding CSS</li>
+            <li>Getting Started with JavaScript</li>
+            <li>Exploring Web Development Frameworks</li>
+            <li>Building Responsive Websites</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Image</h2>
+        <figure>
+            <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Nature" width="600">
+            <figcaption>Beautiful technology</figcaption>
+        </figure>
+    </section>
+
+    <!-- Table of 5 Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Elm St, Springfield</td>
+                    <td>+1 555-1234</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St, Shelbyville</td>
+                    <td>+1 555-5678</td>
+                    <td>jane.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary Johnson</td>
+                    <td>789 Pine St, Capital City</td>
+                    <td>+1 555-8765</td>
+                    <td>mary.johnson@example.com</td>
+                </tr>
+                <tr>
+                    <td>James Brown</td>
+                    <td>321 Birch St, Rivertown</td>
+                    <td>+1 555-3456</td>
+                    <td>james.brown@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>654 Maple St, Westville</td>
+                    <td>+1 555-9876</td>
+                    <td>emily.davis@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/submit" method="POST" id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="4" placeholder="Enter a username" /><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" /><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6" placeholder="Enter your password" /><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6" placeholder="Confirm your password" /><br>
+
+            <input type="submit" value="Register" />
+        </form>
+    </section>
+
+</body>
+</html>
